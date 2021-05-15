@@ -1,0 +1,247 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+:root {
+    --text-dark: #4B5556;
+    --text-brown: #CCA085;
+    --bg-white: #fff;
+    --bg-gray: #F5F6F2;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color:var(--text-dark) ;
+}
+
+body {
+    font-family: "Solway", serif;
+    line-height: 1.5;
+    background: var(--bg-white);
+}
+
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+}
+.offset-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*
+    =================== Header section ========================
+*/
+
+.header {
+    height: 100px;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.menu__item {
+    margin-left:20px ;
+}
+
+.menu__link {
+    font-size: 18px;
+}
+
+/*
+    =================== Main section ========================
+*/
+
+
+main#main-container {
+   background: var(--bg-gray);
+   max-width: 1170px;
+   width: 100%;
+}
+
+@media only screen and (min-width: 1370px) {
+        
+    main#main-container {
+        background: var(--bg-gray);
+        max-width: 1400px;
+        width: 100%;
+    }
+    
+}
+
+#main-container h2 {
+    font-size: 54px;
+    margin-left: -50px;
+}
+
+
+/*
+    =================== About section ========================
+*/
+
+.about-me {
+    padding: 60px 0;
+}
+.about-me h2 {
+    margin-bottom: 30px;
+}
+.about__image {
+    padding: 0 50px;
+    position: relative;
+    display: flex;
+}
+.about__image img {
+    display: block;
+}
+.about__role {
+    position: absolute;
+    top: 0;
+    left: 45%;
+
+    transform: rotate(90deg);
+    transform-origin: center left;
+}
+
+
+.about__intro {
+    max-width: 430px;
+    margin: 0 auto;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+
+@media only screen and (min-width: 1370px) {
+        
+    .about__role {
+        left: 38%;
+    }
+    .about__intro {
+        max-width: 550px
+    }
+    
+}
+
+/*
+    =================== Project section ========================
+*/
+
+.projects {
+    padding: 60px 0;
+}
+.projects h2 {
+    margin-bottom: 30px;
+}
+.main-project {
+    
+}
+.list-project{
+    list-style-type: disc;
+}
+.list-project__item {
+ padding: 5px;
+ margin-left: 30px;
+ margin-bottom: 10px;
+}
+
+.list-project__link {
+    position: relative;
+    font-size: 20px;
+    color: var(--text-brown);
+    transition: all .3s;
+}
+
+.list-project__link:hover {
+    text-decoration: underline;
+}
+
+.skills {
+    color: var(--text-dark);
+}
+
+
+/*
+    =================== Contact section ========================
+*/
+.contact {
+    padding: 60px 0;
+}
+.contact h3 {
+    color: var(--text-dark);
+    font-weight: 400;
+    font-size: 40px;
+}
+.mailing {
+    padding: 20px;
+}
+
+.list-contact {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.list-contact li a {
+    font-size: 35px;
+}
+.list-contact li a span {
+    color: var(--text-brown);
+}
+
+
+/*
+    =================== Footer section ========================
+*/
+
+.footer {
+    height: 140px;
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.textcopy {
+
+
+}
+
+.madewith {
+
+}
